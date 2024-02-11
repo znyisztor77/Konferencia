@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34525.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Konferencia", "Konferencia\Konferencia.csproj", "{668B1ABA-D87F-462E-82DD-5051EE15BD3D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{668B1ABA-D87F-462E-82DD-5051EE15BD3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{668B1ABA-D87F-462E-82DD-5051EE15BD3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{668B1ABA-D87F-462E-82DD-5051EE15BD3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{668B1ABA-D87F-462E-82DD-5051EE15BD3D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {795F7CF2-CF92-40D4-932A-5713CF5CB1AF}
+	EndGlobalSection
+EndGlobal
