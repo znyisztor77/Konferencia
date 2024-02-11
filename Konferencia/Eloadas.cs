@@ -8,7 +8,7 @@ using System.Drawing;
 
 namespace Konferencia
 {
-    class Konferencia
+    class Eloadas
     {
         readonly int konferencia_id;
         string cim;
@@ -23,7 +23,7 @@ namespace Konferencia
         public int HelyDb { get => helyDb; set => helyDb = value; } 
         public int[,] Ertekeles { get => ertekeles; set => ertekeles = value; }
 
-        public Konferencia(int konferencia_id, string cim, int sorDb, int helyDb)
+        public Eloadas(int konferencia_id, string cim, int sorDb, int helyDb)
         {
             this.konferencia_id = konferencia_id;
             Cim = cim;
