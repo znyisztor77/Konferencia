@@ -28,30 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.buttonJobbranyil = new System.Windows.Forms.Button();
-            this.buttonBalranyil = new System.Windows.Forms.Button();
+            this.buttonBalraranyil = new System.Windows.Forms.Button();
             this.panelErtekeles = new System.Windows.Forms.Panel();
             this.pictureBoxKolto = new System.Windows.Forms.PictureBox();
+            this.buttonJobbranyil = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxKolto)).BeginInit();
             this.SuspendLayout();
             // 
-            // buttonJobbranyil
+            // buttonBalraranyil
             // 
-            this.buttonJobbranyil.Location = new System.Drawing.Point(12, 77);
-            this.buttonJobbranyil.Name = "buttonJobbranyil";
-            this.buttonJobbranyil.Size = new System.Drawing.Size(75, 23);
-            this.buttonJobbranyil.TabIndex = 0;
-            this.buttonJobbranyil.Text = "button1";
-            this.buttonJobbranyil.UseVisualStyleBackColor = true;
-            // 
-            // buttonBalranyil
-            // 
-            this.buttonBalranyil.Location = new System.Drawing.Point(282, 77);
-            this.buttonBalranyil.Name = "buttonBalranyil";
-            this.buttonBalranyil.Size = new System.Drawing.Size(75, 23);
-            this.buttonBalranyil.TabIndex = 1;
-            this.buttonBalranyil.Text = "button2";
-            this.buttonBalranyil.UseVisualStyleBackColor = true;
+            this.buttonBalraranyil.BackgroundImage = global::Konferencia.Properties.Resources.bal;
+            this.buttonBalraranyil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonBalraranyil.Location = new System.Drawing.Point(12, 77);
+            this.buttonBalraranyil.Name = "buttonBalraranyil";
+            this.buttonBalraranyil.Size = new System.Drawing.Size(81, 57);
+            this.buttonBalraranyil.TabIndex = 0;
+            this.buttonBalraranyil.UseVisualStyleBackColor = true;
             // 
             // panelErtekeles
             // 
@@ -68,6 +60,16 @@
             this.pictureBoxKolto.TabIndex = 3;
             this.pictureBoxKolto.TabStop = false;
             // 
+            // buttonJobbranyil
+            // 
+            this.buttonJobbranyil.BackgroundImage = global::Konferencia.Properties.Resources.jobb;
+            this.buttonJobbranyil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonJobbranyil.Location = new System.Drawing.Point(273, 77);
+            this.buttonJobbranyil.Name = "buttonJobbranyil";
+            this.buttonJobbranyil.Size = new System.Drawing.Size(75, 57);
+            this.buttonJobbranyil.TabIndex = 1;
+            this.buttonJobbranyil.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -75,10 +77,11 @@
             this.ClientSize = new System.Drawing.Size(1110, 450);
             this.Controls.Add(this.pictureBoxKolto);
             this.Controls.Add(this.panelErtekeles);
-            this.Controls.Add(this.buttonBalranyil);
             this.Controls.Add(this.buttonJobbranyil);
+            this.Controls.Add(this.buttonBalraranyil);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxKolto)).EndInit();
             this.ResumeLayout(false);
 
@@ -86,8 +89,8 @@
 
         #endregion
 
+        private System.Windows.Forms.Button buttonBalraranyil;
         private System.Windows.Forms.Button buttonJobbranyil;
-        private System.Windows.Forms.Button buttonBalranyil;
         private System.Windows.Forms.Panel panelErtekeles;
         private System.Windows.Forms.PictureBox pictureBoxKolto;
     }

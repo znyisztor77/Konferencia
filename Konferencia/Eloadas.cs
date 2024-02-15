@@ -10,36 +10,36 @@ namespace Konferencia
 {
     class Eloadas
     {
-        readonly int konferencia_id;
+        readonly int eloadasid;
         string cim;
-        int sorDb;
-        int helyDb;
+        int sor;
+        int szek;
         int[,] ertekeles;
 
-        public int Konferencia_id => konferencia_id;
+        public int Eloadasid => eloadasid;
         
         public string Cim { get => cim; set => cim = value; }
-        public int SorDb { get => sorDb; set =>  sorDb =value; }
-        public int HelyDb { get => helyDb; set => helyDb = value; } 
+        public int SorDb { get => sor; set =>  sor =value; }
+        public int HelyDb { get => szek; set => szek = value; } 
         public int[,] Ertekeles { get => ertekeles; set => ertekeles = value; }
 
-        public Eloadas(int konferencia_id, string cim, int sorDb, int helyDb)
+        public Eloadas(int eloadasid, string cim, int sor, int szek)
         {
-            this.konferencia_id = konferencia_id;
+            this.eloadasid = eloadasid;
             Cim = cim;
-            SorDb = sorDb;
-            HelyDb = helyDb;
-            this.ertekeles = new int[sorDb, helyDb];
+            SorDb = sor;
+            HelyDb = szek;
+            this.ertekeles = new int[sor, szek];
         }
         public Image getKoltoKep()
         {
             return Image.FromFile($"Kepek{Path.DirectorySeparatorChar}{this.cim}.jpg");
         }
 
-        public Image getErtekelesKep(int sorDb, int helyDb)
+        public Image getErtekelesKep(int sor, int szek)
         {
             Image ErtekelesKep;
-            switch (Ertekeles[sorDb, helyDb])
+            switch (Ertekeles[sor, szek])
             {
                 case 1:
                     ErtekelesKep = Image.FromFile($"Kepek{Path.DirectorySeparatorChar}Pont1.jpg");
@@ -60,6 +60,11 @@ namespace Konferencia
             }
             return ErtekelesKep;
         }
-
+        internal void TeremAdat(int sor, int szek, int ertekeles)
+        {
+            this.ertekeles[sor - 1, szek - 1] = ertekeles;
+        }
     }
+
+}
 }

@@ -12,9 +12,16 @@ namespace Konferencia
 {
     public partial class Form1 : Form
     {
+        List<Eloadas> konferencia = new List<Eloadas>(); 
+        Adatbazis db = new Adatbazis();
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            konferencia = db.konferenciaAdatokBetolt();
         }
     }
 }
