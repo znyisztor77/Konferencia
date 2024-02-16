@@ -39,7 +39,7 @@ namespace Konferencia
         public Image getErtekelesKep(int sor, int szek)
         {
             Image ErtekelesKep;
-            switch (Ertekelesek[sor, szek])
+            switch (Ertekelesek[szek, sor])
             {
                 case 1:
                     ErtekelesKep = Image.FromFile($"Kepek{Path.DirectorySeparatorChar}Pont1.jpg");

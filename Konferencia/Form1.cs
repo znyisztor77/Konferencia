@@ -42,10 +42,10 @@ namespace Konferencia
                 if (konferencia[konferenciaIndex].Cim.ToLower().Contains(kepNeve.ToLower().Split('.')[0].Split('\\')[1]))            
             pictureBoxKolto.Image = Image.FromFile(kepNeve);
 
-            // értékelések etöltése--------------
-            for (int sor = 0; sor < konferencia[konferenciaIndex].Sorok; sor++)
+            // értékelések betöltése--------------
+            for (int sor = 0; sor < konferencia[konferenciaIndex].Szekek; sor++)
             {
-                for(int szek =0; szek < konferencia[konferenciaIndex].Szekek; szek++)
+                for(int szek =0; szek < konferencia[konferenciaIndex].Sorok; szek++)
                 {
                     PictureBox pb = new PictureBox();
                     pb.Image = konferencia[konferenciaIndex].getErtekelesKep(sor, szek);

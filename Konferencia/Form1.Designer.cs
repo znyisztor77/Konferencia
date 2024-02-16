@@ -50,7 +50,7 @@
             // 
             this.panelErtekeles.Location = new System.Drawing.Point(459, 12);
             this.panelErtekeles.Name = "panelErtekeles";
-            this.panelErtekeles.Size = new System.Drawing.Size(281, 502);
+            this.panelErtekeles.Size = new System.Drawing.Size(494, 346);
             this.panelErtekeles.TabIndex = 2;
             // 
             // pictureBoxKolto
@@ -77,7 +77,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(824, 561);
+            this.ClientSize = new System.Drawing.Size(1048, 561);
             this.Controls.Add(this.pictureBoxKolto);
             this.Controls.Add(this.panelErtekeles);
             this.Controls.Add(this.buttonJobbranyil);

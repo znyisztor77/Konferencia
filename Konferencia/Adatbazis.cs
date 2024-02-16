@@ -44,7 +44,7 @@ namespace Konferencia
         internal List<Eloadas> konferenciaAdatokBetolt()
         {
             List<Eloadas> eloadas = new List<Eloadas>();
-            sql.CommandText = "SELECT * FROM eloadasok NATURAL JOIN ertekelesek";
+            sql.CommandText = "SELECT * FROM ertekelesek NATURAL JOIN eloadasok";
             //sql.CommandText = "SELECT * FROM `ertekelesek` INNER JOIN eloadasok ON eloadasok.eloadasid=ertekelesek.eloadasid;";
 
             try
