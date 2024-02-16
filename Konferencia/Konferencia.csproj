@@ -135,18 +135,5 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Content Include="Kepek\Babits.jpg" />
-    <Content Include="Kepek\bal.jpg" />
-    <Content Include="Kepek\Esterházy.jpg" />
-    <Content Include="Kepek\jobb.jpg" />
-    <Content Include="Kepek\ment.jpg" />
-    <Content Include="Kepek\Móricz.jpg" />
-    <Content Include="Kepek\Petőfi.jpg" />
-    <Content Include="Kepek\Pont0.jpg" />
-    <Content Include="Kepek\Pont1.jpg" />
-    <Content Include="Kepek\Pont2.jpg" />
-    <Content Include="Kepek\Pont3.jpg" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

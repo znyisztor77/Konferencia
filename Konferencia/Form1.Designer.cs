@@ -44,19 +44,21 @@
             this.buttonBalraranyil.Size = new System.Drawing.Size(81, 57);
             this.buttonBalraranyil.TabIndex = 0;
             this.buttonBalraranyil.UseVisualStyleBackColor = true;
+            this.buttonBalraranyil.Click += new System.EventHandler(this.buttonBalraranyil_Click);
             // 
             // panelErtekeles
             // 
             this.panelErtekeles.Location = new System.Drawing.Point(459, 12);
             this.panelErtekeles.Name = "panelErtekeles";
-            this.panelErtekeles.Size = new System.Drawing.Size(584, 272);
+            this.panelErtekeles.Size = new System.Drawing.Size(281, 502);
             this.panelErtekeles.TabIndex = 2;
             // 
             // pictureBoxKolto
             // 
+            this.pictureBoxKolto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBoxKolto.Location = new System.Drawing.Point(99, 12);
             this.pictureBoxKolto.Name = "pictureBoxKolto";
-            this.pictureBoxKolto.Size = new System.Drawing.Size(168, 157);
+            this.pictureBoxKolto.Size = new System.Drawing.Size(257, 346);
             this.pictureBoxKolto.TabIndex = 3;
             this.pictureBoxKolto.TabStop = false;
             // 
@@ -64,17 +66,18 @@
             // 
             this.buttonJobbranyil.BackgroundImage = global::Konferencia.Properties.Resources.jobb;
             this.buttonJobbranyil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.buttonJobbranyil.Location = new System.Drawing.Point(273, 77);
+            this.buttonJobbranyil.Location = new System.Drawing.Point(362, 77);
             this.buttonJobbranyil.Name = "buttonJobbranyil";
             this.buttonJobbranyil.Size = new System.Drawing.Size(75, 57);
             this.buttonJobbranyil.TabIndex = 1;
             this.buttonJobbranyil.UseVisualStyleBackColor = true;
+            this.buttonJobbranyil.Click += new System.EventHandler(this.buttonJobbranyil_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1110, 450);
+            this.ClientSize = new System.Drawing.Size(824, 561);
             this.Controls.Add(this.pictureBoxKolto);
             this.Controls.Add(this.panelErtekeles);
             this.Controls.Add(this.buttonJobbranyil);

@@ -44,22 +44,22 @@ namespace Konferencia
         internal List<Eloadas> konferenciaAdatokBetolt()
         {
             List<Eloadas> eloadas = new List<Eloadas>();
-            //sql.CommandText = "SELECT * FROM ertekelesek NATURAL JOIN eloadasok";
-            sql.CommandText = "SELECT * FROM `ertekelesek` INNER JOIN eloadasok ON eloadasok.eloadasid=ertekelesek.eloadasid;";
+            sql.CommandText = "SELECT * FROM eloadasok NATURAL JOIN ertekelesek";
+            //sql.CommandText = "SELECT * FROM `ertekelesek` INNER JOIN eloadasok ON eloadasok.eloadasid=ertekelesek.eloadasid;";
 
             try
             {
                 kapcsolatNyit();
                 using (MySqlDataReader reader = sql.ExecuteReader())
                 {
-                    int aktualisID = -1;
+                    int aktualisId = -1;
                     int eloadasIndex = -1;
                     while (reader.Read())
                     {
-                        if(aktualisID != reader.GetInt32("eloadasid"))
+                        if(aktualisId != reader.GetInt32("eloadasid"))
                         {
-                            eloadas.Add(new Eloadas(reader.GetInt32("eloadasid"), reader.GetString("ertekeles"), reader.GetInt32("sor"), reader.GetInt32("szek")));
-                            aktualisID = reader.GetInt32("eloadasid");
+                            eloadas.Add(new Eloadas(reader.GetInt32("eloadasid"), reader.GetString("cim"), reader.GetInt32("sorok"), reader.GetInt32("szekek")));
+                            aktualisId = reader.GetInt32("eloadasid");
                             eloadasIndex++;
                         }
                         eloadas[eloadasIndex].TeremAdat(reader.GetInt32("sor"), reader.GetInt32("szek"), reader.GetInt32("ertekeles"));
