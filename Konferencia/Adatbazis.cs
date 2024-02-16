@@ -62,7 +62,7 @@ namespace Konferencia
                             aktualisId = reader.GetInt32("eloadasid");
                             eloadasIndex++;
                         }
-                        //eloadas[eloadasIndex].TeremAdat(reader.GetInt32("sor"), reader.GetInt32("szek"), reader.GetInt32("ertekeles"));
+                        eloadas[eloadasIndex].TeremAdat(reader.GetInt32("sorok"), reader.GetInt32("szekek"), reader.GetInt32("ertekeles"));
                     }
                 }
 
