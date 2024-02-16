@@ -28,7 +28,7 @@ namespace Konferencia
         public Eloadas( int eloadasid,string cim,int sorok, int szekek)
         {
             this.eloadasid = eloadasid;
-            Cim = cim;
+            Cim = cim;           
             Sorok = sorok;
             Szekek = szekek;
             this.ertekelesek = new int[sorok, szekek];
@@ -63,7 +63,7 @@ namespace Konferencia
 
         internal void TeremAdat(int sor, int szek, int ertekeles)
         {
-            this.ertekelesek[sor -1, szek -1] = ertekeles;
+            this.ertekelesek[sor -1, szek -1 ] = ertekeles;
         }
     }
 

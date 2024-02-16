@@ -29,6 +29,7 @@ namespace Konferencia
         private void Form1_Load(object sender, EventArgs e)
         {
             konferencia = db.konferenciaAdatokBetolt();
+            
             konferenciaAdatai();
         }
 

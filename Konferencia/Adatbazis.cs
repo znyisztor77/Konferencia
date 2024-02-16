@@ -10,8 +10,8 @@ namespace Konferencia
 {
     internal class Adatbazis
     {
-        MySqlConnection connection = null;
         MySqlCommand sql = null;
+        MySqlConnection connection = null;
 
         public Adatbazis()
         {
@@ -22,7 +22,7 @@ namespace Konferencia
             sb.Database = "konferencia";
             sb.CharacterSet = "utf8";
 
-            connection = new MySqlConnection(sb.ConnectionString);
+           connection = new MySqlConnection(sb.ConnectionString);
             sql = connection.CreateCommand();
 
             try
@@ -44,8 +44,8 @@ namespace Konferencia
         internal List<Eloadas> konferenciaAdatokBetolt()
         {
             List<Eloadas> eloadas = new List<Eloadas>();
-            sql.CommandText = "SELECT * FROM ertekelesek NATURAL JOIN eloadasok";
-            //sql.CommandText = "SELECT * FROM `ertekelesek` INNER JOIN eloadasok ON eloadasok.eloadasid=ertekelesek.eloadasid;";
+            //sql.CommandText = "SELECT * FROM ertekelesek NATURAL JOIN eloadasok";
+            sql.CommandText = "SELECT * FROM `ertekelesek` INNER JOIN eloadasok ON eloadasok.eloadasid=ertekelesek.eloadasid;";
 
             try
             {
@@ -74,6 +74,8 @@ namespace Konferencia
             }
             return eloadas;
         }
+
+       
 
         private void kapcsolatNyit()
         {
