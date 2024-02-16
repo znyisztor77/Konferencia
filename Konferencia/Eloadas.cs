@@ -61,10 +61,10 @@ namespace Konferencia
             return ErtekelesKep;
         }
 
-        internal void TeremAdat(int sor, int szek, int ertekeles)
+        /*internal void TeremAdat(int sor, int szek, int ertekeles)
         {
             this.ertekelesek[sor -1, szek -1] = ertekeles;
-        }
+        }*/
     }
 
 }
